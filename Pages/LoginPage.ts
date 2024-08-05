@@ -14,13 +14,14 @@ export default class LoginPage{
  
   async enterEmail() {
     const emailfield = await this.page.locator('input[name="username"]');
-    await emailfield.fill("mishrapampam319@gmail.com");
+    // Replace with your user id
+    await emailfield.fill("email@gmail.com");
   }
 
 
   async enterPassword() {
    const passwordField = await this.page.locator('input[name="password"]');
-   // password can't be share just demo password
+   // password can't be shared just demo password
     await passwordField.fill('123478')
   }
 
